@@ -108,3 +108,36 @@ SELECT name FROM students WHERE age > 18
 
 ![alt text](image-3.png)
 
+
+## 44-5 Character, Date & UUID Types
+### Character 
+
+#### CHAR
+
+- `Storage` : n bytes
+- `Length` : Fixed length n
+- `Use case` : When you know the exact length (like country codes:'USA')
+
+#### VARCHAR
+
+- `Storage` : Variable
+- `Length` : Up to n characters
+- `Use case` : Flexible length but with a max limit (like usernames, emails)
+
+#### TEXT
+
+- `Storage` : Variable
+- `Length` : unlimited
+- `Use case` : Long text, descriptions,
+comments
+
+
+![alt text](image-4.png)
+
+### DATE 
+
+![alt text](image-5.png)
+
+### UUID 
+
+![alt text](image-6.png)
