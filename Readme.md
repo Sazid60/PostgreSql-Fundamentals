@@ -35,3 +35,76 @@ SELECT name FROM students WHERE age > 18
 - So, SQL is a declarative language to interact with databases. It’s old but gold, and still the backbone of all modern data systems
 - It’s also powering the future with AI
 
+## 44-2 pgAdmin Basics
+- use of pgadmin- unnecessary
+
+## 44-3 Install Beekeeper Studio
+- beekeeper supports cross platform and cross db 
+
+## 44-4 Integer & Boolean Types
+- we can set data type to the attributes of a table 
+- Setting data types improves :
+    1. Data Accuracy
+    2. Memory Efficiency
+    3. Performance 
+    4. Clarity and Constrains  
+
+![alt text](image-2.png)
+
+### Data Type
+- `Boolean (we will commonly use)` 
+- `Numbers (we will commonly use)` - 
+- Binary 
+- `Date/Time (we will commonly use)`
+- json
+- `Character (we will commonly use)`
+- `UUID (we will commonly use)`
+- Array 
+- XML
+
+#### Boolean 
+- true 
+- false 
+- null 
+
+#### Number / Int 
+
+##### Small Int (int2)
+- `Storage` : 2 bytes 
+- `Range` : -32,768 to +32,767
+- `Use case` : Small numbers (like age,quantity)
+
+##### Integer (int4)
+- `Storage` : 4 bytes 
+- `Range` : ~ -2B to +2B
+- `Use case` : Default choice for whole numbers
+
+##### Bigint (int8)
+- `Storage` : 8 bytes 
+- `Range` : ~ -9 quintillion to +9 quintillion
+- `Use case` : Very large numbers (IDs,counters)
+
+
+##### Real (float4)
+- `Storage` : 4 bytes
+- `Range` : ~6 decimal digits precision
+- `Use case` : Approximate values (e.g.,sensor data)
+
+##### DOUBLE PRECISION (float8)
+- `Storage` : 4 bytes
+- `Range` : ~15 decimal digits precision
+- `Use case` : Higher precision calculations
+
+##### NUMERIC / DECIMAL
+- `Storage` : variable
+- `Range` : User-defined precision (exact)
+- `Use case` : Money, financial calculations
+
+##### SERIAL
+- `Storage` : 4 bytes (auto-increment integer)
+- `Range` : 1 to 2,147,483,647
+- `Use case` : Auto-incrementing IDs, primary keys
+
+
+![alt text](image-3.png)
+
