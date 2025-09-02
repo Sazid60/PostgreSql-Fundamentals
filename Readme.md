@@ -310,3 +310,49 @@ CREATE TABLE students (
 
 ![alt text](image-17.png)
 
+## 44-9 Insert Data Methods
+
+- add table 
+
+```sql
+create table
+  person (
+    id serial primary key,
+    username varchar(50) unique,
+    email varchar(50) unique,
+    age int check (age >= 20),
+    isActive boolean default false
+  );
+```
+
+- insert data 
+
+```sql
+insert into person (id, username, email, age)
+values
+  (2, 'mizan bai', 'mizan2@gmail.com', 60)
+```
+
+- see all the data 
+
+```sql 
+select * from person;
+```
+
+## 44-10 Insert Without Column Names
+
+```sql
+insert into
+  person (username, email, age)
+values
+  ('sazid', 'sazid@gmail.com', 60),
+  ('shakil', 'shakil@gmail.com', 63),
+  ('kamal', 'kamal@gmail.com', 66),
+  ('jamal', 'jamal@gmail.com', 67);
+```
+- we will not basically do this 
+
+```sql
+insert into person values
+  (7, 'mizan baia', 'mizan3@gmail.com', 60);
+```
