@@ -141,3 +141,44 @@ comments
 ### UUID 
 
 ![alt text](image-6.png)
+
+## 44-6 Create & Drop DB/Table
+- Create database 
+
+```
+
+create database school;
+
+```
+
+- Delete a database 
+
+```
+drop database school;
+```
+
+- create a table 
+
+![alt text](image-7.png)
+
+```
+CREATE TABLE students (
+  id serial,
+  name varchar(50),
+  age int,
+  isActive boolean,
+  dob date 
+)
+```
+
+- delete a table 
+
+```
+drop table students;
+```
+
+- there is a safe way to delete a table (if exists delete)
+
+```
+drop table if exists students; 
+```
