@@ -182,3 +182,37 @@ drop table students;
 ```
 drop table if exists students; 
 ```
+
+## 44-7 Column Constraints
+- there are a lot of constrains 
+    1. NOT NULL
+    2. UNIQUE 
+     
+    ![alt text](image-8.png)
+
+    3. PRIMARY KEY : `Primary Key = must be unique + cannot be null`
+
+    ![alt text](image-9.png)
+
+    4. FOREIGN KEY 
+
+    ![alt text](image-10.png)
+
+    5. DEFAULT : `Setting Default Value`
+
+    ![alt text](image-11.png)
+
+    5. CHECK 
+
+    ![alt text](image-12.png)
+
+
+```
+CREATE TABLE students (
+  student_id SERIAL PRIMARY KEY,
+  full_name  VARCHAR(100) NOT NULL,
+  email  VARCHAR(100) UNIQUE, -- email  VARCHAR(100) UNIQUE NOT NULL,
+  age INT CHECK(age >= 18),
+  status VARCHAR(20) DEFAULT 'active'
+)
+```
